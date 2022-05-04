@@ -1,0 +1,6 @@
+Cypress: npm install --save-dev cypress
+Font-Awesome: $ component install FortAwesome/Font-Awesome
+Styled-Components: npm install styled-components@^5.0.0 react@^16.8 react-dom@^16.8 react-is@^16.8
+Axois; $ npm install axios
+Dotenv: npm install dotenv --save
+React-router-dom: $ npm install --save react-router-dom
