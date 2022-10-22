@@ -3,7 +3,64 @@
   <head>
     <title>Profile</title>
   </head>
-  <body background=">
+  <body>
+    <!-- HEADERS -->
+    <header class="dashboard">
+        <div class="dashboard-tag">
+            <h1>Dashboard Users</h1>
+        </div>
+    </header>
+    <div class="profile-tag">
+      <h1>Profile</h1>
+    </div>
+    <!-- FORM PART 1 -->
+    <div class="general">
+      <h2 class="profile-desc">Profile Information</h2>
+      <h3>Update your profile's information.</h3>
+    </div>
+    <div class="logistics">
+      <form action="">
+        <div class="form-input">
+          <input type="text" name="first_name" autocomplete="off" required>
+            <label for="first_name" class="form-input-label">
+              <span class="label">First Name</span>
+            </label>
+        </div>
+        <div class="form-input">
+          <input type="text" name="last_name" autocomplete="off" required>
+            <label for="last_name" class="form-input-label">
+              <span class="label">Last Name</span>
+            </label>
+        </div>
+        <div class="form-input">
+          <button class="save">
+            <span>Save</span>
+          </button>
+    </div>
+    <!-- FORM PART 2 -->   
+    <div class="general">
+     <h2 class="profile-desc">Update Password</h2>
+     <h3>Ensure your account has a long, safe password for safety.</h3>
+    </div>  
+    <div class="logistics">
+      <form action="">
+        <div class="form-input">
+          <input type="text" name="Current_Pass" autocomplete="off" required>
+            <label for="Current_Pass" class="form-reset-password">
+              <span>Current Password</span>
+            </label>
+        </div>
+        <div class="form-input">
+          <input type="text" name="Verify_Pass" autocomplete="off" required>
+            <label for="Verify_Pass" class="form-reset-password">
+              <span>Verify Password</span>
+            </label>
+        </div>
+        <div class="form-input">
+          <button class="save">
+            <span>Save</span>
+          </button>
+    </div>
   </body>
 </html>
   
