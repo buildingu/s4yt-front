@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+
+	<head>
+	
+		<title> Treasure Map </title>
+		<meta charset = "UTF-8">
+		<link rel = "stylesheet" type = "text/css" href = "map.css"/>
+		<meta http-equiv = "X-UA-Compatible" content="IE = edge">
+		<meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+
+	</head>
+	
+	<body> 
+	
+		<header>
+		
+			<img id = "dollars-logo" src = "logo-dollars.png"/>
+			<img id = "heading" src = "title-treasuremap.png"/>
+			<img id = "help" src = "btn-help.png"/>
+		
+		</header>
+		
+		<article>
+		
+			<!--Images-->
+			
+			<img class = "center" src = "back-map.png"/>
+			<a href = "<!-- Insert link -->"> <img id = "welcome" src = "welcome.png"/>
+			<a href = "<!-- Insert link -->"> <img id = "free-raffle" src = "btn-10freeraffle.png"/>
+			<a href = "<!-- Insert link -->"> <img id = "profile" src = "btn-moreraffle.png"/>
+			<a href = "<!-- Insert link -->"> <img id = "business" src = "btn-seebusinesses.png"/>
+			<a href = "<!-- Insert link -->"> <img id = "sponsors" src = "btn-sponsors.png"/>
+			<a href = "<!-- Insert link -->"> <img id = "event" src = "btn-eventresults.png"/>
+			<a href = "<!-- Insert link -->"> <img id = "raffle" src = "btn-rafflepage.png"/>
+			<img id = "whale" src = "back-whale.png"/>
+			<img id = "compass" src = "back-compass.png"/>
+			<img id = "line" src = "line.png"/>
+			
+			<!-- Text-->
+			
+			<p id = "welcome-text"> WELCOME ABOARD! </p> 
+			<p id = "free-raffle-text"> 10 FREE REAAFLE TIX ALREADY! </p>
+			<p id = "profile-text"> PROFILE PAGE </p>
+			<p id = "business-text"> SEE BUSINESSES </p>
+			<p id = "sponsors-text"> SPONSORS </p>
+			<p id = "event-text"> EVENT RESULTS </p> 
+			<p id = "raffle-text"> RAFFLE PAGE </p>
+			<p id = "time-left"> TIME LEFT </p>
+			<p id = "coins-have"> 0 </p>
+			
+		</article>
+		
+		<footer>
+		
+			<img id = "chat" src = "btn-chat.png"/>
+			<img id = "coins" src = "coins.png"/>
+			
+		</footer>
+		
+		<p id = "countdown"></p>
+
+		<script>
+		
+			// Set the date we're counting down to
+			var countDownDate = new Date("Jan 3, 2023 06:00:00").getTime();
+
+			// Update the count down every 1 second
+			var x = setInterval(function() {
+
+				// Get today's date and time
+				var now = new Date().getTime();
+    
+				// Find the distance between now and the count down date
+				var distance = countDownDate - now;
+    
+				// Time calculations for days, hours, minutes and seconds
+				var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				if((hours+"").length === 1){hours = "0"+hours;
+				}
+				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+				if((minutes+"").length === 1){minutes = "0"+minutes;
+				}
+				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+				if((seconds+"").length === 1){seconds = "0"+seconds;
+				}
+				// Output the result in an element with id = "countdown"
+				document.getElementById("countdown").innerHTML = hours + ":" + minutes + ":" + seconds;
+    
+				// If the count down is over, write some text 
+				if (distance < 0) {
+					clearInterval(x);
+					document.getElementById("countdown").innerHTML = "TIME OVER";
+				}
+			}, 1000);
+			
+		</script>
+	
+	</body>
+	
+</html>
