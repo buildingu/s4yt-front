@@ -1,12 +1,64 @@
 body {
-    background-image: url('https://scx1.b-cdn.net/csz/news/800/2017/theoreticala.jpg');
+    background-image: url('https://drive.google.com/file/d/1bJeR9E4RurLd4XLruC7ClLGRoNrjcFO7/view?usp=share_link');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     color: #FFFFFF;
 }
 
-.background img {
-  width: 100%;
-   position: relative;
+.dashboard {
+    font-family: "Copperplate", "Papyrus", fantasy;
+    color: #905434;
+    text-align: center;
+    down: 100px;
+}
+
+.profile-tag {
+    font-family: "Copperplate", "Papyrus", fantasy;
+    color: #905434;
+    position: relative;
+    left: 450px;
+    top: 50px;
+}
+
+.general {
+    font-family: "Times New Roman", Times, serif;
+    color: #905434;
+    position: relative;
+    left: 450px;
+    top: 75px;
+}
+
+.form-input {
+    font-family: "Times New Roman", Times, serif;
+    color: #905434;
+    position: relative;
+    left: 450px;
+    top: 65px;
+}
+
+input {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: #c78d1d;
+  border-radius: 8px;
+  background-color: #545454;
+  color: white;
+}
+
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+
+input[type=button] {
+  background: url('https://drive.google.com/file/d/14H1oupc4CAg4YFpPEErSBuAV1LWlXG3p/view?usp=share_link');
+  padding-left: 16px;
+  height: 16px
+}
+
+.form-input {
+  font-size: 1.15em;
+  font-weight: bold;
 }
