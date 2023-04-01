@@ -1,0 +1,21 @@
+
+.doublon-counter {
+    border-right: 3px solid var(--primary-font);
+}
+.doublon-counter-text {
+    font-family:'Bebas Neue',Arial,sans-serif;
+    color: var(--primary-font);
+    line-height: .85;
+    text-align: center;
+}
+
+.doublon-counter-span {
+    font-size: 4rem;
+}
+
+.raffle-list {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap:5px;
+    row-gap:5px;
+}
