@@ -4,7 +4,7 @@
 }
 .doublon-counter-text {
     font-family:'Bebas Neue',Arial,sans-serif;
-    color: var(--primary-font);
+    color: blue;
     line-height: .85;
     text-align: center;
 }
@@ -18,4 +18,13 @@
     grid-template-columns: auto auto;
     column-gap:5px;
     row-gap:5px;
+}
+
+
+.main-page {
+    background-image: url('./../assets/back-map.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:88vh;
+    width:71vw;
 }
