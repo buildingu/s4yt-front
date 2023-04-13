@@ -23,19 +23,24 @@
                     <img src="./assets/logo.png" alt="Logo S4YT">
                 </div>
                 <!-- COUNTER -->
-                <div class="">
-                    <div class="d-flex justify-content-start align-items-center col-4 logo">
-                        <img src="assets/coins_3.png" alt="doublon counter" class="col-6">
-                        <div class="doublon-counter-text text-center">
-                            <p>You got</p>
-                            <p class="doublon-counter-span">24</p>
-                            <p>doblons</p>
+                <div class="row">
+                    <div class="col-5">
+                        <div class="d-flex justify-content-start align-items-center col-12 logo">
+                            <img src="assets/coins_3.png" alt="doublon counter" class="col-5">
+                            <div class="doublon-counter-text text-center">
+                                <p>You got</p>
+                                <p class="doublon-counter-span">24</p>
+                                <p>doblons</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="col-6">
+                            <h1 class="title"><span class="text-left">See</span> Businesses</h1>
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
-                    <h1 class="title">See Businesses</h1>
-                </div>
+
             </header>
 
             <!-- NAVBAR -->
@@ -71,7 +76,61 @@
 
     <!-- MAIN SECTION -->
     <section class="main-section flex flex-column align-items-center row col-12">
-        <!--ADD YOUR HTML PORTION HERE-->
+        <div class="col-10">
+            <ul class="col-11 business-list mt-5 flex flex-column align-items-center" role='list'>
+                <li class="col-6 business">
+                    <a href="#">
+                        <img src="assets/business/beyond_the_binge.png" alt="beyond_the_binge">
+                    </a>
+                </li>
+                <li class="col-11 business">
+                    <h1 class="form-label form-title"><span class="text-center">Heathcote,</span> <br>Little
+                        and Prince
+                    </h1>
+                </li>
+            </ul>
+        </div>
+        <!-- Video Description -->
+        <div class="desc col-8">
+            <p class="video-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et
+                dolore magna aliqua. </p>
+        </div>
+        <!-- Video -->
+        <div class="col-7 mt-1">
+            <iframe class="video" src="https://www.youtube.com/embed/EngW7tLk6R8" frameborder="0" allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Buttons -->
+        <div class="container col-8 mt-2">
+            <div class="row">
+                <div class="col">
+                    <button class="col-12 offset-1 mt-3 btn-back">
+                        <img src="assets/business/back-btn.png" alt="btn back">
+                    </button>
+                </div>
+                <div class="col">
+                    <ul class="list-unstyled">
+                        <li>
+                            <button class="col-11 btn-back">
+                                <img src="assets/business/btn-video-normal-sel.png" alt="video button">
+                            </button>
+                        </li>
+                        <li>
+                            <button class="col-11 btn-back">
+                                <img src="assets/business/btn-question-normal-sel.png" alt="question button">
+                            </button>
+                        </li>
+                        <li>
+                            <button class="col-11 btn-back">
+                                <img src="assets/business/btn-meetup-normal-sel.png" alt="meetup button">
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- BOTTOM SECTION-->
@@ -114,6 +173,12 @@
             </div>
             <div class="col-7 flex justify-content-start align-items-center">
                 <ul role="list" class="col-12 mt-2 d-flex justify-content-start align-items-center">
+                    <li class="me-2">
+                        <!-- CIRCLE LOGO -->
+                        <div class="footer-logo">
+                            <p>LOGO</p>
+                        </div>
+                    </li>
                     <li class="me-2">
                         <!-- CIRCLE LOGO -->
                         <div class="footer-logo">
