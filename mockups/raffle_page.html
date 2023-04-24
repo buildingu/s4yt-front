@@ -22,8 +22,9 @@
         <div class="d-flex mt-3">
             <header class="col-10 row">
                 <!--Logo-->
-                <div class="col-4 logo">
-                    <img src="./assets/Logo-raffle-page.png" />
+                <div class="d-flex col-4 logo">
+                    <img src="./assets/logo.png" />
+                    <h1 class="title">RAFFLE PAGE</h1>
                 </div>
             </header>
             <!--NAVBAR-->
@@ -56,88 +57,88 @@
         </div>
     </div>
     <!--MAIN SECTION-->
-    <div class="main-page" style="margin-top:2%;padding-top:8%;margin-left:auto;margin-right:auto">
-        <div style="display:flex; height:15%;">
-            <img src="./assets/tokens-for-treasures.png" style="width:20vw;height:20vh; margin-left: 10vw"/>
-            <div class="counter" style="padding-top:3%;margin-left:15vw">
-                <h1 class="doublon-counter">YOUR TOTAL: <span id='total'>0</span></h1>
+    <div class="main-page">
+        <div class="head">
+            <img src="./assets/tokens-for-treasures.png"/>
+            <div class="total-counter">
+                <p class="doublon-counter">YOUR TOTAL: <span id='total'>0</span></p>
 
             </div>
         </div>
-        <div class="raffle-items" style="display:grid;grid-template-rows:repeat(2,50%);grid-template-columns: repeat(4,20%);margin-left: 275px;">
-            <div>
-                <img src="./assets/t-shirt.jpg"  style="width:45%;height:45%;border:.5em solid rgba(146, 108, 108, 0.308);padding: .5em;"/>
-                <h1 class="doublon-counter">T-shirt</h1>
+        <ul class="prize-container">
+            <li>
+                <img src="./assets/t-shirt.jpg"  class="prizes"/>
+                <p class="doublon-counter">T-shirt</p>
                 <div id="counter">
                     <button onclick="increment('count1')">+</button>
                     <span id="count1">0</span>
                     <button onclick="decrement('count1')">-</button>
                 </div>
               
-            </div>
-            <div>
-                <img src="./assets/keychain.jpg" style="width:45%;height:45%;border:.5em solid rgba(146, 108, 108, 0.308);padding: .5em;"/>
-                <h1 class="doublon-counter">Keychain</h1>
+            </li>
+            <li>
+                <img src="./assets/keychain.jpg" class="prizes"/>
+                <p class="doublon-counter">Keychain</p>
                 <div id="counter">
                     <button onclick="increment('count2')">+</button>
                     <span id="count2">0</span>
                     <button onclick="decrement('count2')">-</button>
                 </div>
-            </div>
-            <div>
-                <img src="./assets/lanyard.jpg" style="width:45%;height:45%;border:.5em solid rgba(146, 108, 108, 0.308);padding: .5em;"/>
-                <h1 class="doublon-counter">Lanyard</h1>
+            </li>
+            <li>
+                <img src="./assets/lanyard.jpg" class="prizes"/>
+                <p class="doublon-counter">Lanyard</p>
                 <div id="counter">
                     <button onclick="increment('count3')">+</button>
                     <span id="count3">0</span>
                     <button onclick="decrement('count3')">-</button>
                 </div>
-            </div>
-            <div>
-                <img src="./assets/t-shirt.jpg" style="width:45%;height:45%;border:.5em solid rgba(146, 108, 108, 0.308);padding: .5em;"/>
-                <h1 class="doublon-counter">T-shirt</h1>
+            </li>
+            <li>
+                <img src="./assets/t-shirt.jpg" class="prizes"/>
+                <p class="doublon-counter">T-shirt</p>
                 <div id="counter">
                     <button onclick="increment('count4')">+</button>
                     <span id="count4">0</span>
                     <button onclick="decrement('count4')">-</button>
                 </div>
-            </div>
-            <div>
-                <img src="./assets/t-shirt.jpg"  style="width:45%;height:45%;border:.5em solid rgba(146, 108, 108, 0.308);padding: .5em;"/>
-                <h1 class="doublon-counter">T-shirt</h1>
+            </li>
+            <li>
+                <img src="./assets/t-shirt.jpg"  class="prizes"/>
+                <p class="doublon-counter">T-shirt</p>
                 <div id="counter">
                     <button onclick="increment('count5')">+</button>
                     <span id="count5">0</span>
                     <button onclick="decrement('count5')">-</button>
                 </div>
-            </div>
-            <div>
-                <img src="./assets/keychain.jpg"  style="width:45%;height:45%;border:.5em solid rgba(146, 108, 108, 0.308);padding: .5em;"/>
-                <h1 class="doublon-counter">Keychain</h1>
+            </li>
+            <li>
+                <img src="./assets/keychain.jpg"  class="prizes"/>
+                <p class="doublon-counter">Keychain</p>
                 <div id="counter">
                     <button onclick="increment('count6')">+</button>
                     <span id="count6">0</span>
                     <button onclick="decrement('count6')">-</button>
                 </div>
-            </div>
-            <div>
-                <img src="./assets/lanyard.jpg" style="width:45%;height:45%;border:.5em solid rgba(146, 108, 108, 0.308);padding: .5em;"/>
-                <h1 class="doublon-counter">Lanyard</h1>
+            </li>
+            <li>
+                <img src="./assets/lanyard.jpg" class="prizes"/>
+                <p class="doublon-counter">Lanyard</p>
                 <div id="counter">
                     <button onclick="increment('count7')">+</button>
                     <span id="count7">0</span>
                     <button onclick="decrement('count7')">-</button>
                 </div>
-            </div>
-            <div>
-                <img src="./assets/t-shirt.jpg" style="width:45%;height:45%;border:.5em solid rgba(146, 108, 108, 0.308);padding: .5em;"/>
-                <h1 class="doublon-counter">T-shirt</h1>
+            </li>
+            <li>
+                <img src="./assets/t-shirt.jpg" class="prizes"/>
+                <p class="doublon-counter">T-shirt</p>
                 <div id="counter">
                     <button onclick="increment('count8')">+</button>
                     <span id="count8">0</span>
                     <button onclick="decrement('count8')">-</button>
                 </div>
-            </div>
+            </li>
             <script>
                 function increment(counterId) {
                     console.log('test')
@@ -160,7 +161,7 @@
                     }
                 }
               </script>
-        </div>
+        </ul>
     </div>
     <!--BOTTOM SECTION-->
     <section class="col-12">
@@ -169,14 +170,14 @@
                 <!--BOTTOM LEFT-->
                 <div>
                     <!--COUNTER-->
-                    <div class="d-flex justify-content-start align-items-center col-4" style="margin-left:12vw;">
+                    <div class="counter">
                         <img src="./assets/coins.png" alt="doublon counter" class="col-6"/>
                         <div class="doublon-counter text-center">
                             <p>You got</p>
                             <p class="doublon-counter-span">24</p>
                             <p>doublons</p>
                         </div>
-                        <div class="time" style="margin-left: 38vw;">
+                        <div class="time">
                             <div class="doublon-counter text-center">
                                 <p>You still have <span class='doublon-counter-span'>24:00:00</span> left</p>
                             </div>
@@ -187,7 +188,7 @@
             </div>
             </div>
     </section>
-    <footer class="mt-auto col-12 text-white" style="background-color:#ec268f">
+    <footer class="mt-auto col-12 text-white">
         <div class="row col-12 d-flex justify-content-start align-items-center">
             <div class="fs-1 col-4">
                 <p>Powered by</p>
