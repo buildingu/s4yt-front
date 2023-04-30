@@ -11,57 +11,47 @@
         <link rel="stylesheet" href="css/raffle_page.css">
     </head>
 <body>
-    <div class="container">
-        <!--<div style="display: flex; gap: 100px; height: 200px">
-            <img src="./assets/Logo-raffle-page.png" />
-            <img src="./assets/btn_mainmap-normal.png" />
-            <img src="./assets/btn_busmap-normal.png" />
-        </div> -->
-
-        <!--Header -->
-        <div class="d-flex mt-3">
-            <header class="col-10 row">
-                <!--Logo-->
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid col-10">
+            <header class="col-10 d-flex justify-content-start flex-row align-items-center"  >
+            <!--Logo-->
                 <div class="d-flex col-4 logo">
                     <img src="./assets/logo.png" />
                     <h1 class="title">RAFFLE PAGE</h1>
                 </div>
             </header>
-            <!--NAVBAR-->
-            <nav class="navbar navbar-expand-lg navbar-light col-2">
-                <div class="container-fluid">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">
-                            <img src="./assets/btn_mainmap-normal.png" alt="main map"/>
+            <button class="navbar-toggler col-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-center" aria-current="page" href="#">
+                            <img src="./assets/btn_mainmap-normal.png" alt="main map" class="col-12"/>
                         </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <img src="./assets/btn_busmap-normal.png" alt="business map" />
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-center" href="#">
+                            <img src="./assets/btn_busmap-normal.png" alt="business map" class="col-12"/>
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-center" href="#">
+                            <img src="./assets/btn_logout.png" alt="logout" class="col-12"/>
                         </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <img src="./assets/btn_logout.png" alt="logout" />
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-            </nav>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
+    </nav>
     <!--MAIN SECTION-->
+    <div class="main-flex">
     <div class="main-page">
         <div class="head">
             <img src="./assets/tokens-for-treasures.png"/>
             <div class="total-counter">
-                <p class="doublon-counter">YOUR TOTAL: <span id='total'>0</span></p>
+                <p class="doublon-counter">YOUR TOTAL: <span id='total'>24</span></p>
 
             </div>
         </div>
@@ -145,9 +135,9 @@
                     let countSpan = document.getElementById(counterId);
                     let count = parseInt(countSpan.textContent);
                     if (count >= 0){
-                        count++;
-                        document.getElementById('total').textContent = parseInt(document.getElementById('total').textContent) + 1;
-                        countSpan.textContent = count;
+                        count--;
+                        document.getElementById('total').textContent = parseInt(document.getElementById('total').textContent) - 1;
+                        countSpan.textContent++;
                     }
                 }
             
@@ -156,19 +146,21 @@
                     let count = parseInt(countSpan.textContent);
                     if (count > 0){
                         count--;
-                        document.getElementById('total').textContent = parseInt(document.getElementById('total').textContent) -1;
-                        countSpan.textContent = count;
+                        document.getElementById('total').textContent = parseInt(document.getElementById('total').textContent) + 1;
+                        countSpan.textContent--;
                     }
                 }
               </script>
         </ul>
+    </div>
+    <img src="assets/feather.png" class="feather" />
     </div>
     <!--BOTTOM SECTION-->
     <section class="col-12">
         <div class="d-flex justify-content-between">
             <div class="">
                 <!--BOTTOM LEFT-->
-                <div>
+                <div class="bottom-section">
                     <!--COUNTER-->
                     <div class="counter">
                         <img src="./assets/coins.png" alt="doublon counter" class="col-6"/>
@@ -177,10 +169,10 @@
                             <p class="doublon-counter-span">24</p>
                             <p>doublons</p>
                         </div>
-                        <div class="time">
-                            <div class="doublon-counter text-center">
-                                <p>You still have <span class='doublon-counter-span'>24:00:00</span> left</p>
-                            </div>
+                    </div>
+                    <div class="time">
+                        <div class="doublon-counter text-center">
+                            <p>You still have <span class='doublon-counter-span'>24:00:00</span> left</p>
                         </div>
                     </div>
 
