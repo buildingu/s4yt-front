@@ -1,3 +1,11 @@
+body {
+    /* Apply specific CSS styles for phones */
+    /* width: 375px; */
+    /* Set the desired width for your target phones */
+    margin: 0 auto;
+    /* Center the content horizontally */
+}
+
 .doublon-counter-text {
     font-family: 'Bebas Neue', Arial, sans-serif;
     color: var(--primary-font);
@@ -15,19 +23,29 @@
     row-gap: 5px;
 }
 
-.video-description {
+.video-description,
+.question {
     font-family: 'Corbel', Arial, sans-serif;
     color: var(--primary-font);
-    line-height: 0.85;
-    word-spacing: 5px;
-    font-size: x-large;
-    font-weight: lighter;
+}
+
+.video-description {
+    /* line-height: 0.85; */
+    /* word-spacing: 5px; */
+    /* font-size: x-large; */
+    font-size: 2vh;
+    /* font-weight: lighter; */
     text-align: justify;
+
+}
+
+.question {
+    line-height: 1rem;
 }
 
 .video {
-    width: 100%;
-    height: 100%;
+    width: 25vh;
+    height: 15vh;
 }
 
 .title {
@@ -35,5 +53,43 @@
 }
 
 .form-title {
-    font-size: 1.5rem;
+    font-size: 3.5vh;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-left: 10px;
 }
+
+.video-buttons {
+    width: 12vh;
+}
+
+.back-button {
+    width: 11vh;
+}
+
+.beyond-the-binge-icon {
+    margin-left: 2vh;
+}
+
+.text-input {
+    height: 20vh;
+}
+
+#two-containers {
+    background-color: #e6c396;
+}
+
+.footer-text {
+    margin-left: 2vh;
+    font-family: 'Corbel', Arial, sans-serif;
+    white-space: nowrap;
+}
+
+@media screen and (orientation:landscape) {}
+
+
+/* Tablet portrait*/
+@media only screen and (min-width: 600px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
