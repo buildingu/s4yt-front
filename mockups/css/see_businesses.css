@@ -6,14 +6,20 @@ body {
     /* Center the content horizontally */
 }
 
+.left-header-container {
+    margin-left: -10px;
+    margin-right: 10px;
+}
+
 .doublon-counter-text {
     font-family: 'Bebas Neue', Arial, sans-serif;
     color: var(--primary-font);
     line-height: 0.85;
+    margin-left: -10px;
 }
 
 .doublon-counter-span {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .business-list {
@@ -27,10 +33,12 @@ body {
 .question {
     font-family: 'Corbel', Arial, sans-serif;
     color: var(--primary-font);
+    font-size: small;
+    margin-top: -15px;
 }
 
 .video-description {
-    /* line-height: 0.85; */
+    line-height: 1.25;
     /* word-spacing: 5px; */
     /* font-size: x-large; */
     font-size: 2vh;
@@ -45,7 +53,7 @@ body {
 
 .video {
     width: 25vh;
-    height: 15vh;
+    height: 18vh;
 }
 
 .title {
@@ -57,6 +65,15 @@ body {
     white-space: nowrap;
     text-overflow: ellipsis;
     margin-left: 10px;
+}
+
+#form-title-middle {
+    margin-left: 25px;
+}
+
+.form-heading {
+    margin-top: -10px;
+    margin-left: -20px;
 }
 
 .video-buttons {
@@ -73,10 +90,31 @@ body {
 
 .text-input {
     height: 20vh;
+    font-size: 10px;
+    max-height: 10em;
+    border-radius: 5px;
+    resize: none;
 }
 
-#two-containers {
+#two-containers,
+#video-container {
+    height: auto;
+    width: 80%;
+    /* Adjust this value as needed */
+    max-width: 225px;
+    /* Set a maximum width to prevent it from becoming too wide */
+    margin: 0 auto;
+    /* Center the container horizontally */
+    padding: 10px;
+    /* Add some padding for spacing */
+}
+
+#two-container {
     background-color: #e6c396;
+}
+
+#video-container {
+    text-align: center;
 }
 
 .footer-text {
@@ -85,6 +123,51 @@ body {
     white-space: nowrap;
 }
 
+/* Add this style to keep the first radio button and label on the same line */
+.radio-label {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.select-sibling {
+    margin-left: 2px;
+}
+
+#date {
+    width: 100%;
+    height: 25px;
+}
+
+#time {
+    width: 50%;
+    height: 25px;
+}
+
+.vertical-line {
+    background-color: brown;
+    width: 10px;
+}
+
+.coins {
+    width: 90%;
+}
+
+.middle-header {
+    margin-top: 20px;
+}
+
+#form-title-first::after {
+    content: ".";
+    display: inline;
+    /* Ensures the period appears inline */
+}
+
+#form-title-second {
+    display: block;
+    /* Starts the second sentence on a new line */
+}
+
+
 @media screen and (orientation:landscape) {}
 
 
@@ -92,4 +175,184 @@ body {
 @media only screen and (min-width: 600px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+
+    .form-title {
+        font-size: 3.5vh;
+        white-space: normal;
+    }
+
+    .main-section {
+        margin-bottom: 10%;
+        height: 70vh;
+        background-size: 60% 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-image: url('../assets/see_bussinesses_back2.png');
+    }
+
+    .logo {
+        display: block;
+        margin-left: 200px;
+        width: 50%;
+        height: auto;
+    }
+
+    .logo-container {
+        display: none;
+    }
+
+    .nav-container {
+        margin-left: -300px;
+    }
+
+    .navbar-nav .nav-item a.nav-link img {
+        height: 90px;
+        /* Adjust the height as needed */
+        margin-right: 10px;
+        /* Add margin to create space between images */
+
+    }
+
+    .navbar.navbar-expand-lg.navbar-light.bg-light .navbar-nav .nav-item a.nav-link img {
+        max-width: 90px !important;
+    }
+
+
+    .beyond-the-binge-icon {
+        width: 100px;
+        margin: 50px 100px;
+    }
+
+    .business {
+        margin-left: 2em;
+    }
+
+    .business>h1 {
+        margin-left: -10em;
+        margin-top: -50px;
+        font-size: 50px;
+        font-weight: lighter;
+    }
+
+    #form-title-first::after {
+        content: ", ";
+    }
+
+    #form-title-second {
+        display: inline;
+    }
+
+    .video {
+        margin-left: 225px;
+        margin-top: -3em;
+        width: 18em;
+        height: 15em;
+    }
+
+    #video-container {
+        margin-top: -70px;
+        margin-left: 17em;
+    }
+
+
+    .vertical-coin-stack {
+        display: block;
+        transform: scaleX(-1);
+        margin-top: 150px;
+    }
+
+    .bottom-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 40em;
+    }
+
+    .bottom-left {
+        display: flex;
+        align-items: center;
+    }
+
+    .bottom-buttons {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        margin-left: 20px;
+        /* Adjust spacing as needed */
+    }
+
+    .bottom-buttons li {
+        margin-right: 10px;
+        /* Adjust spacing between buttons */
+    }
+
+    .bottom-buttons button {
+        padding: 5px 10px;
+    }
+
+
+    /* Remove button borders and padding */
+    .bottom-buttons button {
+        border: none;
+        padding: 0;
+        background: none;
+    }
+
+    /* Set a fixed width and height for button images */
+    .bottom-buttons button img {
+        width: 70px;
+        /* Adjust the width as needed */
+        height: 70px;
+        /* Adjust the height as needed */
+        vertical-align: middle;
+    }
+
+    .bottom-right {
+        font-family: 'Bebas Neue', Arial, sans-serif;
+        color: var(--primary-font);
+        line-height: 0.85;
+        margin-left: 200px;
+    }
+
+    .timer {
+        font-size: 4em;
+        letter-spacing: 3px;
+    }
+
+    .timer-text {
+        font-size: 1em;
+    }
+
+    .main-section {
+        margin: 0;
+    }
+
+    .bottom-container {
+        margin-top: 20px;
+    }
+
+    .button-container {
+        position: absolute;
+        left: -100px;
+        /* Adjust the left position as needed */
+        top: 350px;
+        /* Adjust the top position as needed */
+    }
+
+    .button-container {
+        position: absolute;
+        left: -100px;
+        /* Adjust the left position as needed */
+        top: 350px;
+        /* Adjust the top position as needed */
+    }
+
+    /* Adjust the "Back" button to be under the "Meetup" button */
+    .back-button-container {
+        position: relative;
+        left: 475px;
+        top: 125px;
+    }
+
+}
