@@ -1,0 +1,64 @@
+/* Mobile devices */
+.desktop-view {
+    display: none;
+}
+
+.mobile-view {
+    display: block;
+}
+
+.main-section-1 {
+    background-repeat: no-repeat;
+    background-image: url('../assets/mobile-bg-seebusinesses1.png');
+    background-position: center center;
+    background-size: 70% 100%;
+    margin-bottom: 10%;
+    height: 70vh;
+}
+
+.business-logos-container {
+    width: 18vh;
+    margin-right: -1.5%;
+}
+
+.businesses-logos {
+    width: 100%;
+    height: auto;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .mobile-view {
+        display: none;
+    }
+
+    .desktop-view {
+        display: block;
+    }
+
+    .main-section {
+        margin-bottom: 10%;
+        width: 100vh;
+        height: 70vh;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-image: url('../assets/see_bussinesses_back2.png');
+    }
+
+    .bottom-buttons {
+        background-color: transparent;
+    }
+
+
+    .timer {
+        font-size: 4em;
+        letter-spacing: 3px;
+    }
+
+    .timer-text {
+        font-size: 1.2em;
+    }
+
+}
