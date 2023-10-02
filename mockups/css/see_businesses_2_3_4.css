@@ -1,0 +1,271 @@
+/* Mobile devices */
+body {
+    margin: 0 auto;
+}
+
+.desktop-view {
+    display: none;
+}
+
+.mobile-view {
+    display: block;
+}
+
+.main-section-1 {
+    background-repeat: no-repeat;
+    background-image: url('../assets/mobile-bg-seebusinesses1.png');
+    background-position: center center;
+    background-size: 70% 100%;
+    margin-bottom: 10%;
+    height: 70vh;
+}
+
+.business-logos-container {
+    width: 18vh;
+    margin-right: -1.5%;
+}
+
+.businesses-logos {
+    width: 100%;
+    height: auto;
+}
+
+.question-meeting-wrapper {
+    font-family: 'Corbel', Arial, sans-serif;
+    color: var(--primary-font);
+}
+
+.left-header-container {
+    margin-left: -10px;
+    margin-right: 10px;
+}
+
+.doublon-counter-text {
+    font-family: 'Bebas Neue', Arial, sans-serif;
+    color: var(--primary-font);
+    line-height: 0.85;
+    margin-left: -10px;
+}
+
+.doublon-counter-span {
+    font-size: 3rem;
+}
+
+.business-list {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+.question {
+    line-height: 1rem;
+}
+
+.video {
+    width: 25vh;
+    height: 18vh;
+}
+
+.title {
+    font-size: x-large;
+}
+
+.form-title {
+    font-size: 3.5vh;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#form-title-middle {
+    margin-left: 25px;
+}
+
+.form-heading {
+    margin-top: -10px;
+    margin-left: -20px;
+}
+
+.video-buttons {
+    width: 12vh;
+}
+
+.back-button {
+    width: 11vh;
+}
+
+.beyond-the-binge-icon {
+    margin-left: 2vh;
+}
+
+.text-input {
+    height: 20vh;
+    font-size: 10px;
+    max-height: 10em;
+    border-radius: 5px;
+    resize: none;
+}
+
+#two-containers,
+#video-container {
+    height: auto;
+    width: 80%;
+    max-width: 225px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#two-container {
+    background-color: #e6c396;
+}
+
+#video-container {
+    text-align: center;
+}
+
+.footer-text {
+    margin-left: 2vh;
+    font-family: 'Corbel', Arial, sans-serif;
+    white-space: nowrap;
+}
+
+.radio-label {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.select-sibling {
+    margin-left: 2px;
+}
+
+#date {
+    width: 100%;
+    height: 25px;
+}
+
+#time {
+    width: 50%;
+    height: 25px;
+}
+
+.vertical-line {
+    background-color: brown;
+    width: 10px;
+}
+
+.coins {
+    width: 90%;
+}
+
+.middle-header {
+    margin-top: 20px;
+}
+
+#form-title-first::after {
+    content: ".";
+    display: inline;
+}
+
+#form-title-second {
+    display: block;
+}
+
+
+.video-description {
+    font-size: 2vh;
+}
+
+.question {
+    font-size: 0.8em;
+}
+
+.video-description,
+.question {
+    text-align: justify;
+    color: var(--primary-font);
+    line-height: 1;
+}
+
+.smaller-row {
+    border-radius: 10px;
+    width: 65%;
+}
+
+.question-meeting-wrapper,
+.question-meeting-wrapper-desktop {
+    font-family: 'Corbel', Arial, sans-serif;
+    color: var(--primary-font);
+}
+
+.form-select {
+    width: auto !important;
+    height: auto !important;
+    font-size: small !important;
+    background-image: url('../assets/down-arrow.svg') !important;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .mobile-view {
+        display: none;
+    }
+
+    .desktop-view {
+        display: block;
+    }
+
+    .main-section {
+        margin-bottom: 10%;
+        width: 100vh;
+        height: 70vh;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-image: url('../assets/see_bussinesses_back2.png');
+    }
+
+    .bottom-buttons {
+        background-color: transparent;
+    }
+
+    .timer {
+        font-size: 4em;
+        letter-spacing: 3px;
+    }
+
+    .timer-text {
+        font-size: 1.2em;
+    }
+
+    .question-meeting-wrapper-desktop {
+        font-family: 'Corbel', Arial, sans-serif;
+        color: var(--primary-font);
+    }
+
+    .video-description {
+        font-size: 2vh;
+    }
+
+    .question {
+        font-size: 0.8em;
+    }
+
+    .video-description,
+    .question {
+        text-align: justify;
+        color: var(--primary-font);
+        line-height: 1;
+    }
+
+    .doublon-counter-text {
+        font-family: 'Bebas Neue', Arial, sans-serif;
+        color: var(--primary-font);
+        line-height: 0.85;
+        margin-left: -10px;
+    }
+
+    .doublon-counter-span {
+        font-size: 3rem;
+    }
+}

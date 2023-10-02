@@ -1,5 +1,6 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="css/register.css">
     <script src="https://kit.fontawesome.com/dda0a07667.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <!-- HEADER -->
     <header>
@@ -37,8 +39,8 @@
                 <a href="#"></a>
             </li>
         </ul>
-        <!-- FORM -->      
-        <form class = "register-form" method="POST">            
+        <!-- FORM -->
+        <form class="main-section" method="POST">
             <div class="col-10 offset-1 my-5 form-wrapper row test py-5">
                 <!-- STEP I -->
                 <div class="col-10 offset-1 form-step" data-step-id="1">
@@ -52,11 +54,9 @@
                     <div class="form-input d-flex flex-column">
                         <div class="d-flex justify-content-between">
                             <label for="email" class="form-label">Email</label>
-                            <i class="fa-solid fa-block-question icon fa-lg"
-                            data-bs-toggle="tooltip"
-                            data-bs-placement="top"
-                            data-bs-custom-class="custom-tooltip"
-                            title='This needs to be your "regular personal" email and NOT an institutional (school) email address in order for you to receive your entry confirmation and for it not to be filtered out!'></i>
+                            <i class="fa-solid fa-block-question icon fa-lg" data-bs-toggle="tooltip"
+                                data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                                title='This needs to be your "regular personal" email and NOT an institutional (school) email address in order for you to receive your entry confirmation and for it not to be filtered out!'></i>
                         </div>
                         <input type="text" name="email" id="email" class="form-control" autocomplete="off">
                         <div id="emailError" class="form-text">Error message</div>
@@ -70,22 +70,23 @@
                     <!-- PASS CONFIRMATION -->
                     <div class="form-input d-flex flex-column pt-lg-3">
                         <label for="pass_confirmation" class="form-label">Pass Confirm</label>
-                        <input type="password" name="pass_confirmation" id="pass_confirmation" class="form-control" autocomplete="off">
+                        <input type="password" name="pass_confirmation" id="pass_confirmation" class="form-control"
+                            autocomplete="off">
                         <div id="passwordConfirmationError" class="form-text">Error message</div>
                     </div>
                     <!-- NEXT BUTTON -->
-                    <div class="form-input d-flex justify-content-end">  
+                    <div class="form-input d-flex justify-content-end">
                         <button class="btn_form" data-step-id="1">
                             <img src="./assets/next.png" alt="next step">
                         </button>
-                    </div>  
+                    </div>
                 </div>
                 <!-- STEP II -->
                 <div class="col-10 offset-1 form-step hidden" data-step-id="2">
                     <!-- EDUCATION -->
                     <div class="form-input d-flex flex-column pt-lg-1">
                         <label for="education" class="form-label">Education</label>
-                        <select name="education" id="education" class = "form-control" autocomplete="off">
+                        <select name="education" id="education" class="form-control" autocomplete="off">
                             <option value="0" selected>Select your education</option>
                             <option value="1">School</option>
                             <option value="2">Example</option>
@@ -111,18 +112,19 @@
                         <div id="gradeError" class="form-text">Error message</div>
                     </div>
                     <!-- NEXT BUTTON -->
-                    <div class="form-input d-flex justify-content-end">  
+                    <div class="form-input d-flex justify-content-end">
                         <button class="btn_form" data-step-id="2">
                             <img src="./assets/next.png" alt="next step">
                         </button>
-                    </div> 
+                    </div>
                 </div>
                 <!-- STEP III -->
                 <div class="col-10 offset-1 form-step hidden" data-step-id="3">
                     <!-- COUNTRY -->
                     <div class="form-input d-flex flex-column">
                         <label for="country" class="form-label">Country</label>
-                        <input list="countries" type="text" name="country" id="country" class="form-control"  placeholder="Search your country" autocomplete="off">
+                        <input list="countries" type="text" name="country" id="country" class="form-control"
+                            placeholder="Search your country" autocomplete="off">
                         <datalist id="countries">
                             <option value="Usa">
                             <option value="Canada">
@@ -134,7 +136,8 @@
                     <!-- PROVINCE -->
                     <div class="form-input d-flex flex-column">
                         <label for="state" class="form-label">State/Province</label>
-                        <input list="states" type="text" name="state" id="state" class="form-control"  placeholder="Search your state" autocomplete="off">
+                        <input list="states" type="text" name="state" id="state" class="form-control"
+                            placeholder="Search your state" autocomplete="off">
                         <datalist id="states">
                             <option value="Usa">
                             <option value="Canada">
@@ -146,7 +149,8 @@
                     <!-- CITY -->
                     <div class="form-input d-flex flex-column">
                         <label for="city" class="form-label">City</label>
-                        <input list="cities" type="text" name="city" id="city" class="form-control"  placeholder="Search your city" autocomplete="off">
+                        <input list="cities" type="text" name="city" id="city" class="form-control"
+                            placeholder="Search your city" autocomplete="off">
                         <datalist id="cities">
                             <option value="Usa">
                             <option value="Canada">
@@ -156,11 +160,11 @@
                         <div id="stateError" class="form-text">Error message</div>
                     </div>
                     <!-- NEXT BUTTON -->
-                    <div class="form-input d-flex justify-content-end">  
+                    <div class="form-input d-flex justify-content-end">
                         <button class="btn_form" id="btn_submit">
                             <img src="./assets/submit.png" alt="submit">
                         </button>
-                    </div> 
+                    </div>
                 </div>
             </div>
         </form>
@@ -168,4 +172,5 @@
     <script src="./libs/jquery-3.6.0/jquery.js"></script>
     <script src="./js/register.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,252 @@
+/************ Mobile ************/
+.desktop-view {
+    display: none;
+}
+
+.mobile-view {
+    display: block;
+}
+
+.main-section-1 {
+    background-repeat: no-repeat;
+    background-image: url('../assets/mobile-bg-seebusinesses1.png');
+    background-position: center center;
+    background-size: 70% 100%;
+    margin-bottom: 10%;
+    height: 70vh;
+}
+
+.business-logos-container {
+    width: 18vh;
+    margin-right: -1.5%;
+}
+
+.businesses-logos {
+    width: 100%;
+    height: auto;
+}
+
+/* Header Styles */
+.coins {
+    width: 100px;
+    height: auto;
+}
+
+.counter-label {
+    margin-bottom: 0;
+}
+
+.back-button {
+    width: 11vh;
+}
+
+.doublon-counter-text {
+    font-family: 'Bebas Neue', Arial, sans-serif;
+    color: var(--primary-font);
+    line-height: 0.85;
+    margin-left: -10px;
+    margin-top: 10px;
+}
+
+.doublon-counter-span {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.smaller-row {
+    border-radius: 10px;
+    width: 65%;
+}
+
+.separator {
+    border: 0.1em solid #895734;
+    height: 80px;
+    margin-right: 10px;
+    margin-left: 5px;
+    margin-bottom: 5%;
+}
+
+.title {
+    margin-bottom: 0;
+}
+
+/* Navbar Styles */
+.main-map-icon,
+.business-map-icon,
+.logout-icon {
+    width: 50px;
+    height: 50px;
+}
+
+/* Body Styles */
+
+.custom-row {
+    margin-top: 16% !important;
+    margin-left: 18% !important;
+}
+
+.custom-row-2 {
+    margin-left: 18% !important;
+}
+
+.custom-row-3 {
+    margin-bottom: 16% !important;
+    margin-left: 18% !important;
+}
+
+
+/* Footer Styles */
+
+.custom-footer-logo {
+    margin-top: 5%;
+    margin-right: 10px;
+    padding-top: 25%;
+}
+
+
+.footer-text {
+    margin-left: 2vh;
+    font-family: 'Corbel', Arial, sans-serif;
+    white-space: nowrap;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    /************ Desktop ************/
+
+    .mobile-view {
+        display: none;
+    }
+
+    .desktop-view {
+        display: block;
+    }
+
+    .main-section {
+        margin-bottom: 10%;
+        width: 100vh;
+        height: 70vh;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-image: url('../assets/see_bussinesses_back2.png');
+    }
+
+    .bottom-buttons {
+        background-color: transparent;
+    }
+
+
+    .timer {
+        font-size: 4em;
+        letter-spacing: 3px;
+    }
+
+    .timer-text {
+        font-size: 1.2em;
+    }
+
+    /* Header Styles */
+
+    .desktop-header img {
+        width: 70%;
+        margin-left: 30%;
+        margin-bottom: 5%;
+    }
+
+    .desktop-header .navbar {
+        margin-right: 15% !important;
+    }
+
+    .desktop-header .main-map-icon,
+    .desktop-header .business-map-icon,
+    .desktop-header .logout-icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* Body (Desktop) */
+    .desktop-view .desktop-feather img {
+        width: 80%;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+    }
+
+    .desktop-view .desktop-feather {
+        margin-top: 10%;
+        height: 50%;
+        width: 20%;
+    }
+
+    .map-button-container {
+        width: 15% !important;
+        margin-left: 10% !important;
+        padding-top: 45% !important;
+    }
+
+    .desktop-view .map-button-container .btn-back {
+        width: 100%;
+        padding-bottom: 10%;
+    }
+
+    .custom-col-md-auto {
+        width: 60% !important;
+        padding-top: 10%;
+    }
+
+    .custom-smaller-row {
+        width: 100% !important;
+    }
+
+    .doublon-counter-row {
+        width: 60%;
+        margin: auto !important;
+    }
+
+    .doublon-counter-icon {
+        width: 100px;
+        height: auto;
+    }
+
+    .doublon-counter-buttons {
+        list-style: none;
+        padding: 0;
+        margin-left: 3%;
+        margin-right: 5%;
+    }
+
+    .doublon-button button {
+        background-color: transparent !important;
+        border: 0 !important;
+        width: 90px;
+    }
+
+    .doublon-counter-label {
+        margin-bottom: 0;
+    }
+
+    .doublon-counter-span {
+        margin-bottom: 0;
+    }
+
+    .doublon-counter-unit {
+        margin-bottom: 0;
+    }
+
+    .timer-text {
+        margin-right: 5px;
+    }
+
+    .vertical-coin-stack {
+        width: 20% !important;
+    }
+
+    /* Footer Styles */
+
+    .logo-style {
+        margin-top: 10%;
+        margin-right: 25px;
+        padding-top: 25%;
+    }
+
+}
